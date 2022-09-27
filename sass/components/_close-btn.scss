@@ -1,0 +1,30 @@
+.close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: rgb(0, 0, 0);
+  background-color: var(--accent-font-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

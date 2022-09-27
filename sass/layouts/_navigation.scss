@@ -1,0 +1,29 @@
+.nav {
+  margin-left: 93px;
+
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--secondary-font-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--t-t-f);
+
+    position: relative;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}

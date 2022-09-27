@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-contacts {
+  &__list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--t-t-f);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}

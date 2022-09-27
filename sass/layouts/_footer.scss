@@ -1,0 +1,10 @@
+.footer {
+  background: var(--aсcent-bgn);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--flex {
+    display: flex;
+    align-items: baseline;
+  }
+}

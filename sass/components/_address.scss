@@ -1,0 +1,44 @@
+.address__list {
+  margin-top: 20px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address__icon {
+  fill: var(--accent-font-color);
+}
+
+.address__mail-link,
+.address__tel-link,
+.address__link {
+  font-style: normal;
+  line-height: 1.71;
+}
+.address__link {
+  color: var(--accent-font-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address__mail-link,
+.address__tel-link {
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+}
+
+.address__mail-link:hover,
+.address__mail-link:focus,
+.address__tel-link:hover,
+.address__tel-link:focus {
+  color: var(--accent-color);
+}
