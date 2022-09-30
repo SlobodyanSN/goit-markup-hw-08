@@ -36,4 +36,17 @@
       color: var(--accent-color);
     }
   }
+  @media screen and (max-width: 480px) {
+    &__list {
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: wrap;
+
+      justify-content: space-between;
+    }
+
+    &__item {
+      max-width: 210px;
+    }
+  }
 }
