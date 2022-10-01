@@ -1,7 +1,13 @@
+.address__group {
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
 .address__list {
   margin-top: 20px;
 }
-
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }

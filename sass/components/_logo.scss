@@ -15,4 +15,8 @@
   &__deko--white {
     color: var(--accent-font-color);
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 }
