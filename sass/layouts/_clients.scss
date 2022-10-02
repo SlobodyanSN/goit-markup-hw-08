@@ -38,17 +38,21 @@
       color: var(--accent-color);
     }
   }
-  @media screen and (max-width: 480px) {
+
+  @media screen and (max-width: 1199px) {
     &__list {
-      margin-left: auto;
-      margin-right: auto;
       flex-wrap: wrap;
 
       justify-content: space-between;
     }
-
     &__item {
-      width: 210px;
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
     }
   }
 }

@@ -1,9 +1,13 @@
 .join {
   margin-left: 70px;
-  @media screen and (max-width: 480px) {
-    text-align: center;
+
+  @media screen and (max-width: 767px) {
     margin-left: 0;
     margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 }
 .join__title {

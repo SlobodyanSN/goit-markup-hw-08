@@ -3,11 +3,12 @@
   flex-direction: column;
   margin-left: auto;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: block;
 
     text-align: center;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .sign-up__title {
@@ -20,7 +21,7 @@
 .sign-up__block {
   display: flex;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: block;
   }
 }
@@ -39,12 +40,17 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  @media screen and (max-width: 480px) {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
   .sign-up__input::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 450px;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 290px;
   }
 }
