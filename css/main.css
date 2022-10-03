@@ -276,6 +276,9 @@ body {
   .features__list {
     display: block;
   }
+  .features__item {
+    text-align: center;
+  }
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -359,6 +362,11 @@ body {
   margin-bottom: 50px;
   margin-top: 0px;
 }
+@media screen and (max-width: 1199px) {
+  .team__title {
+    font-size: 28px;
+  }
+}
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,6 +438,11 @@ body {
   text-align: center;
   color: var(--secondary-font-color);
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    font-size: 28px;
+  }
 }
 .clients__list {
   display: -webkit-box;
@@ -504,12 +517,6 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .footer--flex {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer--flex {
     display: block;
   }
 }
@@ -534,7 +541,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero__button {
     padding-left: 24px;
     padding-right: 24px;
@@ -684,6 +691,12 @@ button {
     margin-bottom: 0px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address__group {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 @media screen and (max-width: 767px) {
   .address__group {
     text-align: center;
@@ -753,6 +766,11 @@ button {
 @media screen and (max-width: 1199px) {
   .join {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .join {
+    margin-right: auto;
   }
 }
 
@@ -1016,14 +1034,23 @@ button {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
-.modal__title {
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+.modal .modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .modal .modal__title {
+    line-height: 1.5;
+  }
 }
 
 .close-btn {
@@ -1156,6 +1183,11 @@ button {
 .agreement__title {
   display: inline-block;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .agreement__title {
+    font-size: 12px;
+  }
 }
 .agreement__icon--checked {
   opacity: 0;
