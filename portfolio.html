@@ -31,9 +31,11 @@
         >
         <nav class="nav">
           <ul class="nav__list list">
-            <li class="nav__item"><a class="nav__link link" href="./index.html">Студія</a></li>
             <li class="nav__item"
-              ><a class="nav__link link activ-page" href="./portfolio.html">Портфоліо</a></li
+              ><a class="nav__link activ-page link" href="./index.html">Студія</a></li
+            >
+            <li class="nav__item"
+              ><a class="nav__link link" href="./portfolio.html">Портфоліо</a></li
             >
             <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
           </ul>
@@ -55,8 +57,14 @@
             ></li
           >
         </ul>
-      </div>
-      <!--top-line-->
+
+        <button class="menu__btn js-open-menu" type="button"
+        aria-expanded="false"
+          aria-controls="mobile-menu">
+        <svg class="menu__icon" width="40" height="40">
+                <use class="menu__icon--menu" href="./imeges/icons.svg#menu_40px"></use>
+      </button>
+      </div>      
     </header>
     <!-- portfolio -->
     <main>
@@ -280,84 +288,86 @@
       </section>
     </main>
 
-    <footer class="footer">
+     <footer class="footer">
       <div class="container footer--flex">
-        <div>
-          <a class="logo__link link" href="./index.html"
-            >Web<span class="logo__deko--white">Studio</span></a
-          >
-          <address class="address">
-            <ul class="address__list list">
-              <li class="address__item">
-                <a
-                  class="address__link link"
-                  target="_blank"
-                  rel="noopener nofollow"
-                  href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+        <div class="address__position">
+          <div class="address__group">
+            <a class="logo__link link" href="./index.html"
+              >Web<span class="logo__deko--white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <a
+                    class="address__link link"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item"
+                  ><a class="address__mail-link link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  ></li
                 >
-              </li>
-              <li class="address__item"
-                ><a class="address__mail-link link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                ></li
-              >
-              <li class="address__item"
-                ><a class="address__tel-link link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                ></li
-              >
+                <li class="address__item"
+                  ><a class="address__tel-link link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  ></li
+                >
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <h2 class="join__title">приєднуйтесь</h2>
+            <ul class="socials list">
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram"
+                >
+                  <svg class="address__icon" width="20" height="20">
+                    <use href="./imeges/icons.svg#instagram1"></use></svg></a
+              ></li>
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter"
+                >
+                  <svg class="address__icon" width="20" height="20">
+                    <use href="./imeges/icons.svg#twitter2"></use></svg></a
+              ></li>
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://m.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
+                >
+                  <svg class="address__icon" width="20" height="20">
+                    <use href="./imeges/icons.svg#facebook3"></use></svg></a
+              ></li>
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://ua.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                >
+                  <svg class="address__icon" width="20" height="20">
+                    <use href="./imeges/icons.svg#linkedin4"></use></svg></a
+              ></li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <h2 class="join__title">приєднуйтесь</h2>
-          <ul class="socials list">
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="instagram"
-              >
-                <svg class="address__icon" width="20" height="20">
-                  <use href="./imeges/icons.svg#instagram1"></use></svg></a
-            ></li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="twitter"
-              >
-                <svg class="address__icon" width="20" height="20">
-                  <use href="./imeges/icons.svg#twitter2"></use></svg></a
-            ></li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://m.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="facebook"
-              >
-                <svg class="address__icon" width="20" height="20">
-                  <use href="./imeges/icons.svg#facebook3"></use></svg></a
-            ></li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://ua.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="linkedin"
-              >
-                <svg class="address__icon" width="20" height="20">
-                  <use href="./imeges/icons.svg#linkedin4"></use></svg></a
-            ></li>
-          </ul>
+          </div>
         </div>
         <form class="sign-up">
           <label class="sign-up__title" for="Sign-up">Підпишіться на розсилку</label>
@@ -379,5 +389,96 @@
         </form>
       </div>
     </footer>
+
+<!------------------- mobile-menu ------------------------->
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg class="menu__icon" width="40" height="40">
+                <use class="menu__icon--close" href="./imeges/icons.svg#close_40px"></use>
+      </button>
+      <nav class="mob-nav">
+          <ul class="mob-nav__list list">
+            <li class="mob-nav__item"
+              ><a class="mob-nav__link link" href="./index.html">Студія</a></li
+            >
+            <li class="mob-nav__item"
+              ><a class="mob-nav__link link" href="./portfolio.html">Портфоліо</a></li
+            >
+            <li class="mob-nav__item"
+            ><a class="mob-nav__link link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="mob-contacts__list list">
+          <li class="mob-contacts__tel"
+            ><a class="mob-contacts__link link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            ></li>
+
+          <li class="mob-contacts__mail">
+            <a class="mob-contacts__link link" href="mailto:info@devstudio.com">
+             
+              info@devstudio.com</a
+            ></li
+          >  
+        </ul>    
+        <div class="mob-join">
+            <h2 class="mob-join__title visually-hidden">приєднуйтесь</h2>
+            <ul class="mob-socials__list list">
+              <li class="mob-socials__item">
+                <a
+                  class="mob-socials__link link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  
+                >instagram
+                 </a
+              ></li>
+              <li class="mob-socials__item">
+                <a
+                  class="mob-socials__link link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  
+                >twitter
+                  </a
+              ></li>
+              <li class="mob-socials__item">
+                <a
+                  class="mob-socials__link link"
+                  href="https://m.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                 
+                >facebook
+                  </a
+              ></li>
+              <li class="mob-socials__item">
+                <a
+                  class="mob-socials__link link"
+                  href="https://ua.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                 
+                >linkedin
+                  </a
+              ></li>
+            </ul>
+          </div>
+        
+    </div>
+    <script src="./js/modal.js"></script>
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+
+    
   </body>
 </html>

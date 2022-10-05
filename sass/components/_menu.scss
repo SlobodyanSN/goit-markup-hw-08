@@ -8,6 +8,19 @@
   background-color: transparent;
 
   margin-left: auto;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container {
@@ -18,6 +31,9 @@
   width: 100%;
   height: 100%;
 
+  display: flex;
+  flex-direction: column;
+
   background-color: var(--accent-font-color);
 
   transform: translateX(100%);
@@ -27,7 +43,110 @@
   transition-duration: 250ms;
   transition-timing-function: var(--t-t-f);
 
+  padding: 48px 40px;
+
   &.is-open {
     transform: translateX(0%);
   }
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  background-color: inherit;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--t-t-f);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mob-nav {
+  margin-bottom: auto;
+  :not(:last-child) {
+    padding-bottom: 32px;
+  }
+
+  &__link {
+    display: block;
+
+    font-size: 40px;
+
+    :not(:last-child) {
+      padding-bottom: 32px;
+    }
+
+    font-weight: 500;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: var(--secondary-font-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--t-t-f);
+
+    position: relative;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.mob-contacts {
+  &__link {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  &__tel {
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+
+  &__mail {
+    font-size: 24px;
+    line-height: calc(24 / 28);
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+}
+.mob-socials {
+  &__list {
+    display: flex;
+
+    color: var(--accent-color);
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    :not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    :not(:first-child) {
+      padding-left: 10px;
+    }
+  }
+
+  &__item {
+    padding-right: 10px;
+  }
+}
+
+.mob-join {
+  margin-top: 32px;
+}
+
+.menu__icon {
+  fill: currentColor;
 }
