@@ -5,12 +5,40 @@
   text-align: center;
   padding: 200px 0px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../imeges/bgr-hero.jpg);
+    url(../imeges/hero__desk-@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../imeges/hero__desk-@2x.jpg);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../imeges/hero__tab-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url(../imeges/hero__tab-@2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../imeges/hero__mob-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url(../imeges/hero__mob-@2x.jpg);
+      }
+    }
+  }
 
   &__title {
     max-width: 666px;

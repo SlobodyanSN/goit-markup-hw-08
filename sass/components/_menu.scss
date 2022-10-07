@@ -111,6 +111,10 @@
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+    @media screen and (max-width: 375px) {
+      font-size: 26px;
+    }
   }
 
   &__mail {
@@ -123,6 +127,8 @@
 .mob-socials {
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
 
     color: var(--accent-color);
 
