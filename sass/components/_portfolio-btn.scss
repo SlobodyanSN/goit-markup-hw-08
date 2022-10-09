@@ -4,8 +4,14 @@
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 340px;
+    justify-content: left;
+  }
 }
 
 .filter__btn {

@@ -36,7 +36,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -45,11 +45,11 @@ address {
 }
 
 .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -113,9 +113,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .header {
-    height: 80px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -321,10 +320,10 @@ body {
   .features__list {
     display: block;
   }
-  .features__item {
+  .features__title {
     text-align: center;
   }
-  .features__item:not(:last-child) {
+  .features__title:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -460,7 +459,7 @@ body {
     display: block;
   }
   .team__item {
-    max-width: 100%;
+    width: 100%;
   }
   .team__item:not(:last-child) {
     margin-bottom: 30px;
@@ -643,8 +642,8 @@ button {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -926,10 +925,20 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .filter {
+    max-width: 340px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .filter__btn {
@@ -969,14 +978,12 @@ button {
       flex-wrap: wrap;
   gap: 30px;
 }
-
 .project__item {
   width: 370px;
-}
-
-.project__link {
   display: block;
   border: 1px solid #eeeeee;
+}
+.project__link {
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -994,12 +1001,10 @@ button {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-
 .project__thumb {
   position: relative;
   overflow: hidden;
 }
-
 .project__backdrop {
   position: absolute;
   top: 0;
@@ -1021,14 +1026,12 @@ button {
   -webkit-transition-timing-function: var(--t-t-f);
           transition-timing-function: var(--t-t-f);
 }
-
 .project__discripnion {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
-
 .project__title {
   font-weight: 700;
   font-size: 18px;
@@ -1038,13 +1041,35 @@ button {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 .project__txt {
   font-size: 16px;
   line-height: 1.875;
   margin-bottom: 0px;
   margin-top: 4px;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .project__list {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .project__item {
+    max-width: 100%;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (max-width: 1199px) and (max-width: 767px) {
+  .project__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .project__list {
+    display: block;
+    max-width: 450px;
+  }
 }
 
 .backdrop {
@@ -1294,6 +1319,8 @@ button {
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--t-t-f);
           transition-timing-function: var(--t-t-f);
+  position: absolute;
+  right: 0px;
 }
 .menu__btn:hover, .menu__btn:focus {
   color: var(--accent-color);
@@ -1385,6 +1412,7 @@ button {
 }
 .mob-contacts__tel {
   font-size: 34px;
+  font-weight: 500;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -1412,6 +1440,7 @@ button {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
+  text-transform: capitalize;
 }
 .mob-socials__list :not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
