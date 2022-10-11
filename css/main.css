@@ -983,6 +983,16 @@ button {
   display: block;
   border: 1px solid #eeeeee;
 }
+@media screen and (max-width: 1199px) {
+  .project__item {
+    width: 354px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .project__item {
+    width: 450px;
+  }
+}
 .project__link {
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1007,8 +1017,8 @@ button {
 }
 .project__backdrop {
   position: absolute;
-  top: 0;
-  left: 0%;
+  top: 0px;
+  left: 0px;
   padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
@@ -1025,6 +1035,7 @@ button {
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--t-t-f);
           transition-timing-function: var(--t-t-f);
+  overflow: hidden;
 }
 .project__discripnion {
   padding-top: 20px;
@@ -1054,21 +1065,13 @@ button {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  .project__item {
-    max-width: 100%;
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (max-width: 1199px) and (max-width: 767px) {
-  .project__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 @media screen and (max-width: 767px) {
   .project__list {
-    display: block;
-    max-width: 450px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
