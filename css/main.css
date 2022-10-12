@@ -474,7 +474,7 @@ body {
             justify-content: space-between;
   }
   .team__item {
-    max-width: 100%;
+    width: 100%;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
@@ -979,18 +979,22 @@ button {
   gap: 30px;
 }
 .project__item {
-  width: 370px;
   display: block;
   border: 1px solid #eeeeee;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .project__item {
-    width: 354px;
+    width: 370px;
   }
 }
 @media screen and (max-width: 767px) {
   .project__item {
-    width: 450px;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__item {
+    width: 354px;
   }
 }
 .project__link {
@@ -1016,6 +1020,7 @@ button {
   overflow: hidden;
 }
 .project__backdrop {
+  height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1025,8 +1030,8 @@ button {
   line-height: 1.5555555556;
   color: var(--accent-font-color);
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -1035,7 +1040,6 @@ button {
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--t-t-f);
           transition-timing-function: var(--t-t-f);
-  overflow: hidden;
 }
 .project__discripnion {
   padding-top: 20px;
